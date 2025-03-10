@@ -30,6 +30,8 @@ public class Book extends Item implements IBorrowable {
     public void borrowItem(String borrower) {
         if (this.borrower == null) {
             this.borrower = borrower;
+        } else {
+            System.out.println("This item is already borrowed!");
         }
     }
 
